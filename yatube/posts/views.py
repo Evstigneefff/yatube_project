@@ -1,10 +1,8 @@
 from django.shortcuts import render
 
 def index(request):
-    context = {
-        'posts': posts,
-    }
-    return render(request, 'posts/index.html', context)
+
+    return render(request, 'posts/index.html')
 
 def group_posts(request, slug):
 
